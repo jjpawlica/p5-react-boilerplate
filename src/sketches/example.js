@@ -1,8 +1,8 @@
 /* eslint-disable no-param-reassign */
 
 const sketch = p => {
-  let x = 100;
-  let y = 100;
+  let x;
+  let y;
 
   let red;
   let green;
@@ -19,7 +19,7 @@ const sketch = p => {
     ({ red, green, blue, maxDots, isPainting, isRandom, shouldSketchReset } = sketchValues);
   };
 
-  p.resetSketch = resetSketch => {
+  p.resetSketch = () => {
     dots = 0;
     p.clear();
     p.setup();
