@@ -71,7 +71,7 @@ class App extends Component {
             <input
               type="checkbox"
               id="randomColor"
-              value={isRandom}
+              checked={isRandom}
               onChange={this.toggleRandomColor}
             />
           </label>
