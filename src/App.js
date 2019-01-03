@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import P5Wrapper from './components/P5Wrapper';
+import example from './sketches/example';
 
 class App extends Component {
+  updateStateHandler = (newState, callback) => this.setState(newState, callback);
+
   render() {
     return (
       <div>
-        <h1>P5 React Boilerplate</h1>
+        <P5Wrapper sketch={example} updateStateHandler={this.updateStateHandler} />
       </div>
     );
   }
